@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KOTECH - Nos Solutions Logicielles</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2a5bd7;
+            --primary-dark: #1a365d;
+            --accent: #e63946;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --gray: #6c757d;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            margin: 0;
+            padding: 0;
+            background-color: #f5f7fa;
+        }
+
+        .solutions-hero {
+            background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+            color: white;
+            padding: 5rem 2rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .solutions-hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') center/cover;
+            opacity: 0.15;
+            z-index: 0;
+        }
+
+        .solutions-hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+            position: relative;
+        }
+
+        .solutions-hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            position: relative;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .software-categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .category-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .category-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+        }
+
+        .category-header {
+            padding: 1.5rem;
+            background: var(--primary);
+            color: white;
+        }
+
+        .category-header h2 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+
+        .software-image {
+            height: 180px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .software-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .category-card:hover .software-image img {
+            transform: scale(1.05);
+        }
+
+        .software-list {
+            padding: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .software-item {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .software-item:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .software-item h3 {
+            color: var(--primary-dark);
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .software-item h3 .external-link {
+            margin-left: 8px;
+            font-size: 0.8rem;
+            color: var(--gray);
+            transition: color 0.3s ease;
+        }
+
+        .software-item h3:hover .external-link {
+            color: var(--accent);
+        }
+
+        .software-features {
+            list-style-type: none;
+            padding-left: 0;
+            margin: 0.5rem 0;
+        }
+
+        .software-features li {
+            padding: 0.3rem 0;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .software-features li::before {
+            content: "✓";
+            color: var(--accent);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        .tech-badge {
+            display: inline-block;
+            background: #e0e7ff;
+            color: var(--primary-dark);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .software-links {
+            display: flex;
+            gap: 10px;
+            margin-top: 1rem;
+        }
+
+        .software-link {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .demo-link {
+            background: var(--primary);
+            color: white;
+            border: 1px solid var(--primary);
+        }
+
+        .demo-link:hover {
+            background: var(--primary-dark);
+            border-color: var(--primary-dark);
+        }
+
+        .docs-link {
+            background: white;
+            color: var(--primary);
+            border: 1px solid var(--primary);
+        }
+
+        .docs-link:hover {
+            background: #f0f4ff;
+        }
+
+        .cta-section {
+            text-align: center;
+            padding: 3rem 2rem;
+            background: white;
+            border-radius: 8px;
+            margin: 4rem 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            background: linear-gradient(135deg, #f5f7fa 0%, white 100%);
+            border: 1px solid #e0e6ed;
+        }
+
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            background: var(--accent);
+            color: white;
+            padding: 0.8rem 2rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border: 2px solid var(--accent);
+            margin-top: 1rem;
+        }
+
+        .cta-button:hover {
+            background: white;
+            color: var(--accent);
+        }
+
+        .cta-button i {
+            margin-right: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .software-categories {
+                grid-template-columns: 1fr;
+            }
+
+            .solutions-hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .software-links {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+<section class="solutions-hero">
+    <h1>Nos Solutions Logicielles</h1>
+    <p>Découvrez notre gamme complète de logiciels et solutions informatiques conçus pour optimiser vos processus métiers et accélérer votre croissance.</p>
+</section>
+
+<div class="container">
+    <div class="software-categories">
+        <div class="category-card">
+            <div class="category-header">
+                <h2>Solutions d'Entreprise</h2>
+            </div>
+            <div class="software-image">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="ERP Dashboard">
+            </div>
+            <div class="software-list">
+                <div class="software-item">
+                    <h3>
+                        <a href="https://erp.kotech.demo" target="_blank">KOTECH ERP Pro</a>
+                        <i class="fas fa-external-link-alt external-link"></i>
+                    </h3>
+                    <p>Solution de gestion intégrée pour PME avec modules comptabilité, RH, stocks et facturation.</p>
+                    <ul class="software-features">
+                        <li>Gestion multi-sociétés</li>
+                        <li>Tableaux de bord personnalisables</li>
+                        <li>Intégration bancaire</li>
+                        <li>Reporting temps réel</li>
+                    </ul>
+                    <div>
+                        <span class="tech-badge">Java</span>
+                        <span class="tech-badge">Spring Boot</span>
+                        <span class="tech-badge">PostgreSQL</span>
+                    </div>
+                    <div class="software-links">
+                        <a href="https://demo.kotech-erp.com" class="software-link demo-link" target="_blank">
+                            <i class="fas fa-play-circle"></i> Démo live
+                        </a>
+                        <a href="https://docs.kotech-erp.com" class="software-link docs-link" target="_blank">
+                            <i class="fas fa-book"></i> Documentation
+                        </a>
+                    </div>
+                </div>
+
+                <div class="software-item">
+                    <h3>
+                        <a href="https://crm.kotech.demo" target="_blank">KOTECH CRM Elite</a>
+                        <i class="fas fa-external-link-alt external-link"></i>
+                    </h3>
+                    <p>Outil complet de gestion de la relation client avec automation marketing.</p>
+                    <ul class="software-features">
+                        <li>Suivi 360° des clients</li>
+                        <li>Email marketing automatisé</li>
+                        <li>Analyse prédictive</li>
+                        <li>Intégration réseaux sociaux</li>
+                    </ul>
+                    <div>
+                        <span class="tech-badge">Node.js</span>
+                        <span class="tech-badge">React</span>
+                        <span class="tech-badge">MongoDB</span>
+                    </div>
+                    <div class="software-links">
+                        <a href="https://demo.kotech-crm.com" class="software-link demo-link" target="_blank">
+                            <i class="fas fa-play-circle"></i> Démo live
+                        </a>
+                        <a href="https://docs.kotech-crm.com" class="software-link docs-link" target="_blank">
+                            <i class="fas fa-book"></i> Documentation
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="category-card">
+            <div class="category-header" style="background: var(--primary-dark);">
+                <h2>Produits Sectoriels</h2>
+            </div>
+            <div class="software-image">
+                <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Health Suite">
+            </div>
+            <div class="software-list">
+                <div class="software-item">
+                    <h3>
+                        <a href="https://health.kotech.demo" target="_blank">KOTECH Health Suite</a>
+                        <i class="fas fa-external-link-alt external-link"></i>
+                    </h3>
+                    <p>Suite logicielle pour établissements de santé (hôpitaux, cliniques, laboratoires).</p>
+                    <ul class="software-features">
+                        <li>Dossier patient électronique</li>
+                        <li>Gestion de planning</li>
+                        <li>Certifié HIPAA</li>
+                        <li>Interopérabilité HL7/FHIR</li>
+                    </ul>
+                    <div>
+                        <span class="tech-badge">C#</span>
+                        <span class="tech-badge">.NET Core</span>
+                        <span class="tech-badge">SQL Server</span>
+                    </div>
+                    <div class="software-links">
+                        <a href="https://healthdemo.kotech.com" class="software-link demo-link" target="_blank">
+                            <i class="fas fa-play-circle"></i> Démo live
+                        </a>
+                        <a href="https://healthdocs.kotech.com" class="software-link docs-link" target="_blank">
+                            <i class="fas fa-book"></i> Documentation
+                        </a>
+                    </div>
+                </div>
+
+                <div class="software-item">
+                    <h3>
+                        <a href="https://edu.kotech.demo" target="_blank">KOTECH EduManager</a>
+                        <i class="fas fa-external-link-alt external-link"></i>
+                    </h3>
+                    <p>Plateforme de gestion scolaire complète pour établissements d'enseignement.</p>
+                    <ul class="software-features">
+                        <li>Gestion des inscriptions</li>
+                        <li>Carnet de notes numérique</li>
+                        <li>Espace parent-élève</li>
+                        <li>Gestion des absences</li>
+                    </ul>
+                    <div>
+                        <span class="tech-badge">PHP</span>
+                        <span class="tech-badge">Laravel</span>
+                        <span class="tech-badge">MySQL</span>
+                    </div>
+                    <div class="software-links">
+                        <a href="https://edudemo.kotech.com" class="software-link demo-link" target="_blank">
+                            <i class="fas fa-play-circle"></i> Démo live
+                        </a>
+                        <a href="https://edudocs.kotech.com" class="software-link docs-link" target="_blank">
+                            <i class="fas fa-book"></i> Documentation
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="category-card">
+            <div class="category-header" style="background: var(--accent);">
+                <h2>Outils Techniques</h2>
+            </div>
+            <div class="software-image">
+                <img src="https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="DevTools">
+            </div>
+            <div class="software-list">
+                <div class="software-item">
+                    <h3>
+                        <a href="https://devtools.kotech.demo" target="_blank">KOTECH DevTools</a>
+                        <i class="fas fa-external-link-alt external-link"></i>
+                    </h3>
+                    <p>Suite d'outils pour développeurs avec gestion de code, CI/CD et monitoring.</p>
+                    <ul class="software-features">
+                        <li>Intégration Git</li>
+                        <li>Tests automatisés</li>
+                        <li>Surveillance des performances</li>
+                        <li>Déploiement continu</li>
+                    </ul>
+                    <div>
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">Docker</span>
+                        <span class="tech-badge">Kubernetes</span>
+                    </div>
+                    <div class="software-links">
+                        <a href="https://devtoolsdemo.kotech.com" class="software-link demo-link" target="_blank">
+                            <i class="fas fa-play-circle"></i> Démo live
+                        </a>
+                        <a href="https://devtoolsdocs.kotech.com" class="software-link docs-link" target="_blank">
+                            <i class="fas fa-book"></i> Documentation
+                        </a>
+                    </div>
+                </div>
+
+                <div class="software-item">
+                    <h3>
+                        <a href="https://securscan.kotech.demo" target="_blank">KOTECH SecurScan</a>
+                        <i class="fas fa-external-link-alt external-link"></i>
+                    </h3>
+                    <p>Solution de sécurité et d'audit des applications et infrastructures.</p>
+                    <ul class="software-features">
+                        <li>Scan de vulnérabilités</li>
+                        <li>Conformité RGPD</li>
+                        <li>Rapports automatisés</li>
+                        <li>Pentesting automatisé</li>
+                    </ul>
+                    <div>
+                        <span class="tech-badge">Go</span>
+                        <span class="tech-badge">Rust</span>
+                        <span class="tech-badge">Elasticsearch</span>
+                    </div>
+                    <div class="software-links">
+                        <a href="https://securscandemo.kotech.com" class="software-link demo-link" target="_blank">
+                            <i class="fas fa-play-circle"></i> Démo live
+                        </a>
+                        <a href="https://securscandocs.kotech.com" class="software-link docs-link" target="_blank">
+                            <i class="fas fa-book"></i> Documentation
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cta-section">
+        <h2>Vous souhaitez voir nos solutions en action ?</h2>
+        <p>Nos experts sont disponibles pour une démonstration personnalisée de nos logiciels.</p>
+        <a href="#contact" class="cta-button">
+            <i class="fas fa-calendar-alt"></i> Demander une démo
+        </a>
+    </div>
+</div>
+</body>
+</html>

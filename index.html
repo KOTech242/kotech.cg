@@ -1,0 +1,2173 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+
+<head>
+  <meta charset="utf-8">
+  <title>KOTech</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Clean responsive bootstrap website template">
+  <meta name="author" content="">
+  <!-- styles -->
+
+  <!-- Ajoutez ces lignes dans votre balise head -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script>
+    // Initialisez EmailJS avec votre User ID
+    (function() {
+      emailjs.init('YOUR_USER_ID'); // Remplacez par votre User ID EmailJS
+    })();
+  </script>
+
+  <link href="assets/css/bootstrap.css" rel="stylesheet">
+  <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+  <link href="assets/css/docs.css" rel="stylesheet">
+  <link href="assets/css/prettyPhoto.css" rel="stylesheet">
+  <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+  <link href="assets/css/flexslider.css" rel="stylesheet">
+  <link href="assets/css/refineslide.css" rel="stylesheet">
+  <link href="assets/css/font-awesome.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="assets/css/animate.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700" rel="stylesheet">
+
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/color/default.css" rel="stylesheet">
+
+  <!-- fav and touch icons -->
+  <link rel="shortcut icon" href="assets/ico/logo.ico">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+
+  <!-- =======================================================
+    Theme Name: Plato
+    Theme URL: https://bootstrapmade.com/plato-responsive-bootstrap-website-template/
+    Author: BootstrapMade.com
+    Author URL: https://bootstrapmade.com
+  ======================================================= -->
+</head>
+
+<body>
+<header>
+  <!-- Navbar
+  ================================================== -->
+  <div class="cbp-af-header">
+    <div class=" cbp-af-inner">
+      <div class="container">
+        <div class="row">
+
+          <div class="span4">
+            <!-- logo -->
+            <div class="logo">
+              <!--<h1><a href="index.html">Plato</a></h1>-->
+              <img src="assets/img/logo.png" alt="" height=10/>
+            </div>
+            <!-- end logo -->
+          </div>
+
+          <div class="span8">
+            <!-- top menu -->
+            <div class="navbar">
+              <div class="navbar-inner">
+                <nav>
+                  <ul class="nav topnav">
+                    <li class="active class_btn">
+                      <a href="#intro">Accueil</a>
+                    </li>
+                    <li class="class_btn">
+                      <a href="#Qui_sommes_nous">Qui sommes nous</a>
+                    </li>
+                    <li class="class_btn">
+                      <a href="#Solutions">Solutions</a>
+                    </li>
+                    <li class="class_btn">
+                      <a href="#Realisations">Réalisations</a>
+                    </li>
+                    <li class="class_btn">
+                      <a href="#Actualites">Actualités</a>
+                    </li>
+                    <li class="class_btn">
+                      <a href="#Contact">Contact</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <!-- end menu -->
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+  <section id="intro">
+
+    <div class="container">
+        <div class="row">
+          <style>
+              .custom-solutions-box {
+                background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+                color: #fff;
+                padding: 40px 30px;
+                border-radius: 20px;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+                position: relative;
+                overflow: hidden;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                height: 100%;
+              }
+              .custom-solutions-box:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+              }
+              .custom-solutions-box::before {
+                content: "🌐";
+                position: absolute;
+                font-size: 180px;
+                color: rgba(255, 255, 255, 0.03);
+                right: 20px;
+                top: 10px;
+                z-index: 0;
+              }
+              .custom-solutions-box .content {
+                position: relative;
+                z-index: 1;
+              }
+              .custom-solutions-box h3 {
+                font-size: 2em;
+                margin-bottom: 20px;
+              }
+              .custom-solutions-box .highlight {
+                color: #00d8ff;
+              }
+              .custom-solutions-box .lead {
+                font-size: 1.15em;
+                margin-bottom: 25px;
+                line-height: 1.6;
+              }
+              .custom-solutions-box .features {
+                list-style: none;
+                padding-left: 0;
+                font-size: 1.1em;
+              }
+              .custom-solutions-box .features li {
+                margin-bottom: 15px;
+                display: flex;
+                align-items: center;
+              }
+              .custom-solutions-box .features i {
+                margin-right: 10px;
+                color: #00d8ff;
+                font-size: 1.2em;
+              }
+
+          </style>
+
+          <!-- Colonne gauche : contenu stylisé -->
+          <div class="span6">
+            <div class="custom-solutions-box">
+              <div class="content">
+                <h5>
+                  <strong style='color:white'>Votre entreprise, <span class="highlight">réinventée par la technologie</span></strong>
+                </h5>
+                <p class="lead">
+                  Nous concevons pour vous, des applications web et mobiles performantes, des logiciels sur mesure,
+                  et assurons la protection de vos systèmes informatiques. Donnez une longueur d'avance à votre transformation numérique.
+                </p>
+                <ul class="features">
+                  <li><i class="fas fa-code"></i> Développement d'applications web, mobiles et logiciels métiers</li>
+                  <li><i class="fas fa-shield-alt"></i> Sécurité informatique & cybersécurité</li>
+                  <li><i class="fas fa-search-dollar"></i> Conseils stratégiques et audit des systèmes d'information</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Colonne droite : slides (inchangé) -->
+          <div class="span6">
+            <div class="group section-wrap upper" id="upper">
+              <div class="section-2 group">
+                <ul id="images" class="rs-slider">
+                  <li class="group">
+                    <a href="#">
+                      <img src="assets/img/slides/refine/slide1.jpg" alt="" />
+                    </a>
+                  </li>
+                  <li class="group">
+                    <a href="#" class="slide-parent">
+                      <img src="assets/img/slides/refine/slide2.jpg" alt="" />
+                    </a>
+                  </li>
+                  <li class="group">
+                    <img src="assets/img/slides/refine/slide3.jpg" alt="" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+    </div>
+
+  </section>
+
+
+  <section id="maincontent">
+    <div class="container">
+      <div class="row">
+        <style>
+          .features{
+            transition: 0.3s;
+            cursor: pointer;
+          }
+          .features:hover{
+            transform: scale(1.05);
+          }
+        </style>
+          <div class="span4">
+            <div class="features">
+              <div class="icon">
+                <i  class="icon-bg-light icon-circled icon-desktop icon-5x active"></i>
+              </div>
+              <div class="features_content">
+                <h3>Applications Web et Logiciel</h3>
+                <p>
+                  Création de solutions web dynamiques, évolutives et adaptées à vos besoins métiers. Nos applications sont rapides, sécurisées et optimisées pour tous les appareils.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="span4">
+            <div class="features">
+              <div class="icon">
+                <i class="icon-bg-light icon-circled icon-mobile-phone icon-5x active"></i>
+              </div>
+              <div class="features_content">
+                <h3>Applications Mobiles</h3>
+                <p>
+                  Nous développons des applications Android et iOS intuitives et performantes pour renforcer votre présence mobile et améliorer l'expérience utilisateur.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="span4">
+            <div class="features">
+              <div class="icon">
+                <i class="icon-bg-light icon-circled icon-shield icon-5x active"></i>
+              </div>
+              <div class="features_content">
+                <h3>Sécurité & Audit informatique</h3>
+                <p>
+                  Audit complet de votre système d'information, mise en place de stratégies de sécurité informatique et accompagnement dans la conformité aux normes internationales.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <!-- blank divider -->
+      <div class="row">
+        <div class="span12">
+          <div class="blank10"></div>
+        </div>
+      </div>
+
+      <section id="cta" style="">
+        <style>
+            #cta{
+              background-color: #1a1a1a;
+              color: #fff;
+              padding: 60px 0;
+              text-align: center;
+            }
+
+            #btn-dmd-audit{
+              background-color: #007bff;
+              color: #fff;
+              padding: 15px 30px;
+              font-size: 1.1em;
+              border-radius: 8px;
+              transition: 0.3s;
+            }
+            #btn-dmd-audit:hover{
+              transform: scale(1.05);
+              background:#064dad;
+            }
+
+        </style>
+        <div class="container">
+          <h2 style="font-size: 2.5em; margin-bottom: 20px;color: #fff;">
+            💡 Offre Spéciale : Audit de sécurité GRATUIT !
+          </h2>
+          <p style="font-size: 1.2em; max-width: 700px; margin: 0 auto 30px;">
+            Pour toute entreprise souhaitant sécuriser son système informatique ou lancer un projet numérique, nous offrons un audit gratuit de vos systèmes. C’est le moment d’agir !
+          </p>
+          <a href="https://wa.me/242068323905?text=Bonjour%20KOTech%2C%20je%20souhaite%20obtenir%20un%20Audit%20gratuit%20de%20mon%20système%20d'informations." target="_blank" id="btn-dmd-audit" class="btn btn-primary btn-lg" style="">
+            Demandez votre audit gratuit
+          </a>
+        </div>
+      </section>
+    </div>
+      <!-- Qui somme nous -->
+        <style>
+          :root {
+            --primary-color: #064dad;
+            --primary-hover: #053f8a;
+            --light-bg: #f9f9f9;
+            --dark-text: #333;
+            --light-text: #fff;
+            --white: #ffffff;
+            --shadow: rgba(0, 0, 0, 0.08);
+          }
+          body {
+            line-height: 1.6;
+            background-color: var(--light-bg);
+            color: var(--dark-text);
+          }
+
+          a {
+            text-decoration: none;
+            color: var(--primary-color);
+          }
+
+          h1, h2, h3 {
+            font-weight: 700;
+            margin-bottom: 1rem;
+          }
+
+          /* Hero Section */
+          .hero-section {
+            background-color:#fff;
+            color: #333;
+            padding: 60px 20px;
+            text-align: center;
+          }
+
+          .hero-section h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+          }
+
+          .hero-section p {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto;
+          }
+
+          /* About Section */
+          .about-section {
+            padding: 30px 20px;
+            max-width: 1200px;
+            margin: auto;
+          }
+
+          .about-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+          }
+
+          .about-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px var(--shadow);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+          }
+
+          .about-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+          }
+
+          .about-card h3 {
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 1rem;
+          }
+
+          .about-card i {
+            font-size: 1.2rem;
+            color: var(--primary-color);
+          }
+
+          .about-card p {
+            font-size: 0.95rem;
+          }
+
+          /* Team Section */
+          .team-section {
+            background-color: #f1f5fa;
+            padding: 60px 20px;
+          }
+
+          .team-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            font-size: 2rem;
+            color: var(--primary-color);
+          }
+
+          .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2rem;
+          }
+
+          .team-member {
+            background: var(--white);
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 6px 16px var(--shadow);
+            transition: transform 0.3s ease;
+          }
+
+          .team-member:hover {
+            transform: translateY(-5px);
+          }
+
+          .team-member img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+          }
+
+          .team-member h5 {
+            font-size: 1.1rem;
+            margin-bottom: 0.3rem;
+            font-weight: bold;
+          }
+
+          .team-member small {
+            color: #666;
+            font-size: 0.9rem;
+          }
+
+          /* CTA Button */
+          .cta-button {
+            text-align: center;
+            margin-top: 2rem;
+            text-decoration:none;
+          }
+
+          .btn-custom {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 0.75rem 1.75rem;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+          }
+
+          .btn-custom:hover {
+            background-color: var(--primary-hover);
+            box-shadow: 0 5px 15px rgba(6, 77, 173, 0.4);
+          }
+
+          @media (max-width: 768px) {
+            .hero-section h1 {
+              font-size: 2rem;
+            }
+          }
+        </style>
+      <!-- Hero Section -->
+      <section class="hero-section" id="Qui_sommes_nous">
+        <h1>Qui sommes-nous ?</h1>
+        <p>
+          <strong>KOTech</strong> est une startup spécialisée dans le développement de solutions digitales innovantes.
+          Basés à Pointe-Noire, nous accompagnons les entreprises dans leur transformation numérique en leur apportant des outils fiables, adaptés et évolutifs.<br/>
+          Donnez à votre entreprise une longueur d’avance grâce à la technologie.
+        </p>
+      </section>
+
+      <!-- About Section -->
+      <section class="about-section">
+        <div class="about-grid">
+          
+          <div class="about-card">
+            <h3><i class="fas fa-briefcase"></i> Notre Mission</h3>
+            <p>Accompagner les entreprises dans leur transformation numérique en leur offrant des solutions technologiques modernes, sécurisées et évolutives. Nous croyons que la technologie doit servir le business, pas l'inverse.</p>
+          </div>
+
+          <div class="about-card">
+            <h3><i class="fas fa-crosshairs"></i> Nos Objectifs</h3>
+            <p>Développer des outils intuitifs et fiables, renforcer la cybersécurité des organisations et apporter un conseil stratégique pertinent. Notre ambition est de devenir un partenaire de confiance dans le développement technologique durable.</p>
+          </div>
+
+          <div class="about-card">
+            <h3><i class="fas fa-code"></i> Expertise Technique</h3>
+            <p>Des développeurs passionnés utilisant les dernières technologies pour créer des solutions optimisées et évolutives. De l'application web au logiciel métier, nous maîtrisons le full-stack.</p>
+          </div>
+
+          <div class="about-card">
+            <h3><i class="fas fa-shield-alt"></i> Sécurité Informatique</h3>
+            <p>La sécurité est au cœur de chaque solution développée. Audit, chiffrement, tests d'intrusion... notre approche proactive protège vos données critiques.</p>
+          </div>
+
+          <div class="about-card">
+            <h3><i class="fas fa-chart-line"></i> Conseil & Stratégie</h3>
+            <p>Nous accompagnons nos clients dans leurs décisions technologiques avec des audits précis, des recommandations opérationnelles et un suivi personnalisé.</p>
+          </div>
+
+          <div class="about-card">
+            <h3><i class="fas fa-lightbulb"></i> Innovation Continue</h3>
+            <p>Toujours en veille technologique, nous intégrons l'intelligence artificielle, le cloud computing et les architectures modernes pour anticiper les besoins futurs.</p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Team Section -->
+      <section class="team-section">
+        <h2 class="team-title">Notre Équipe</h2>
+        <div class="team-grid">
+          <div class="team-member">
+            <img src="assets/img/avatar.png" alt="CEO">
+            <h5>Promesse KOSSA</h5>
+            <small>Fondateur & CEO</small>
+          </div>
+          <div class="team-member">
+            <img src="assets/img/avatar.png" alt="CTO">
+            <h5>Lydarcia MAMPOUYA</h5>
+            <small>Responsable commerciale</small>
+          </div>
+          <div class="team-member">
+            <img src="assets/img/avatar.png" alt="Sécurité">
+            <h5>Welcom Olsen MPIKA</h5>
+            <small>Chef de projet technique</small>
+          </div>
+        </div>
+      </section>
+  </section>
+
+
+<style>
+  :root {
+    --primary: #2a5bd7;
+    --primary-dark: #1a365d;
+    --accent: #e63946;
+    --light: #f8f9fa;
+    --dark: #212529;
+    --gray: #6c757d;
+  }
+
+  .solutions-hero {
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+    color: white;
+    padding: 5rem 2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .solutions-hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('assets/img/slides/refine/slide1_.jpg') center/cover;
+    opacity: 0.15;
+    z-index: 0;
+  }
+
+  .solutions-hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    position: relative;
+    color:var(--light);
+  }
+
+  .solutions-hero p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    position: relative;
+  }
+
+  /*.container {*/
+  /*  max-width: 1200px;*/
+  /*  margin: 0 auto;*/
+  /*  padding: 0 2rem;*/
+  /*}*/
+
+  .software-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  .category-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+  }
+
+  .category-header {
+    padding: 1.5rem;
+    background: var(--primary);
+    color: white;
+  }
+
+  .category-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+
+  .software-image {
+    height: 180px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .software-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+
+  .category-card:hover .software-image img {
+    transform: scale(1.05);
+  }
+
+  .software-list {
+    padding: 1.5rem;
+    flex-grow: 1;
+  }
+
+  .software-item {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #eee;
+  }
+
+  .software-item:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  .software-item h3 {
+    color: var(--primary-dark);
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .software-item h3 .external-link {
+    margin-left: 8px;
+    font-size: 0.8rem;
+    color: var(--gray);
+    transition: color 0.3s ease;
+  }
+
+  .software-item h3:hover .external-link {
+    color: var(--accent);
+  }
+
+  .software-features {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0.5rem 0;
+  }
+
+  .software-features li {
+    padding: 0.3rem 0;
+    position: relative;
+    padding-left: 1.5rem;
+  }
+
+  .software-features li::before {
+    content: "✓";
+    color: var(--accent);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+  }
+
+  .tech-badge {
+    display: inline-block;
+    background: #e0e7ff;
+    color: var(--primary-dark);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .software-links {
+    display: flex;
+    gap: 10px;
+    margin-top: 1rem;
+  }
+
+  .software-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+  }
+
+  .demo-link {
+    background: var(--primary);
+    color: white;
+    border: 1px solid var(--primary);
+  }
+
+  .demo-link:hover {
+    background: var(--primary-dark);
+    border-color: var(--primary-dark);
+    text-decoration:none;
+    color:white;
+  }
+
+  .docs-link {
+    background: white;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+  }
+
+  .docs-link:hover {
+    background: #f0f4ff;
+    text-decoration:none;
+  }
+
+  .cta-section {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: white;
+    border-radius: 8px;
+    margin: 2rem 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    background: linear-gradient(135deg, #f5f7fa 0%, white 100%);
+    border: 1px solid #e0e6ed;
+  }
+
+  .cta-button {
+    display: inline-flex;
+    align-items: center;
+    background: white;
+    color: #3182ce;
+    border: 2px solid #3182ce;
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+  }
+
+  .cta-button:hover {
+    background: #333;
+    color: white;
+    border: 2px solid #333;
+    text-decoration:none;
+  }
+
+  .cta-button i {
+    margin-right: 8px;
+  }
+
+  @media (max-width: 768px) {
+    .software-categories {
+      grid-template-columns: 1fr;
+    }
+
+    .solutions-hero h1 {
+      font-size: 2.2rem;
+    }
+
+    .software-links {
+      flex-direction: column;
+    }
+  }
+</style>
+<section class="solutions-hero" id="Solutions">
+  <h1>Nos Solutions</h1>
+  <p>Découvrez notre gamme complète de logiciels et solutions informatiques conçus pour optimiser vos processus métiers et accélérer votre croissance.</p>
+</section>
+
+<div class="container">
+  <div class="software-categories">
+    <div class="category-card">
+      <div class="software-image">
+        <img src="assets/img/slides/refine/slide1_.jpg" alt="Restaurant POS System">
+      </div>
+      <div class="software-list">
+        <div class="software-item">
+          <h3>
+            <a href="#" target="_blank">KOCaisse-Resto</a>
+            <i class="fas fa-external-link-alt external-link"></i>
+          </h3>
+          <p>Solution complète de gestion de caisse pour restaurants et établissements de restauration.</p>
+          <ul class="software-features">
+            <li>Gestion des commandes en salle et à emporter</li>
+            <li>Suivi des tables et service</li>
+            <li>Comptabilité et reporting journalier</li>
+            <li>Intégration avec les imprimantes de cuisine</li>
+          </ul>
+          <div class="software-links">
+            <a href="https://restaurantdemo.kotech.com" class="software-link demo-link" target="_blank">
+              <i class="fas fa-play-circle" style="margin-right:5px"></i> <span>Démo live</span>
+            </a>
+            <a href="https://restaurantdocs.kotech.com" class="software-link docs-link" target="_blank">
+              <i class="fas fa-book" style="margin-right:5px"></i> <span>Documentation</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="category-card">
+      <div class="software-image">
+        <img src="assets/img/slides/refine/slide1_.jpg" alt="Point of Sale for Shops">
+      </div>
+      <div class="software-list">
+        <div class="software-item">
+          <h3>
+            <a href="https://shop.kotech.demo" target="_blank">KOCaisse-Shop</a>
+            <i class="fas fa-external-link-alt external-link"></i>
+          </h3>
+          <p>Solution complète de caisse enregistreuse pour boutiques et commerces de détail.</p>
+          <ul class="software-features">
+            <li>Gestion des ventes et encaissements</li>
+            <li>Suivi du stock en temps réel</li>
+            <li>Gestion des clients et fiches articles</li>
+            <li>Statistiques de ventes et reporting</li>
+          </ul>
+          <div class="software-links">
+            <a href="https://shopdemo.kotech.com" class="software-link demo-link" target="_blank">
+              <i class="fas fa-play-circle" style="margin-right:5px"></i> <span>Démo live</span>
+            </a>
+            <a href="https://shopdocs.kotech.com" class="software-link docs-link" target="_blank">
+              <i class="fas fa-book" style="margin-right:5px"></i> <span>Documentation</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="category-card">
+      <div class="software-image">
+        <img src="assets/img/slides/refine/slide1_.jpg" alt="Gestion OAE WinDev">
+      </div>
+      <div class="software-list">
+        <div class="software-item">
+          <h3>
+            <a href="https://oae.kotech.demo" target="_blank">La cruche</a>
+            <i class="fas fa-external-link-alt external-link"></i>
+          </h3>
+          <p>Application métier pour la gestion d'objectifs et l'archivage électronique certifié.</p>
+          <ul class="software-features">
+            <li> Suivi d'objectifs avec indicateurs KPI</li>
+            <li> Archivage légal (NF Z42-013, RGPD)</li>
+            <li> Workflows personnalisables</li>
+            <li> Reporting analytique intégré</li>
+            <li> Traçabilité complète des actions</li>
+          </ul>
+          <div class="software-links">
+            <a href="https://shopdemo.kotech.com" class="software-link demo-link" target="_blank">
+              <i class="fas fa-play-circle" style="margin-right:5px"></i> <span>Démo live</span>
+            </a>
+            <a href="https://shopdocs.kotech.com" class="software-link docs-link" target="_blank">
+              <i class="fas fa-book" style="margin-right:5px"></i> <span>Documentation</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      .wd-badge {
+        background-color: #2b579a;
+        color: white;
+      }
+      .windev-badge {
+        background: #2b579a;
+        color: white;
+        padding: 3px 8px;
+        border-radius: 4px;
+        font-size: 0.8em;
+        display: inline-block;
+        margin-bottom: 10px;
+      }
+    </style>
+
+
+
+    <div class="category-card">
+      <div class="software-image">
+        <img src="assets/img/slides/refine/slide1_.jpg" alt="Motema Dating App">
+      </div>
+      <div class="software-list">
+        <div class="software-item">
+          <h3>
+            <a href="https://motema.app" target="_blank">Motema</a>
+            <i class="fas fa-external-link-alt external-link"></i>
+          </h3>
+          <p class="mobile-badge">Application Mobile de Rencontre</p>
+          <p>Trouvez l'amour avec une approche algorithmique intelligente et sécurisée.</p>
+          <ul class="software-features">
+            <li> Matching algorithmique avancé</li>
+            <li> Profils vérifiés</li>
+            <li> Chat sécurisé E2E</li>
+            <li> Rencontres géolocalisées</li>
+            <li> Mode premium avec fonctionnalités exclusives</li>
+          </ul>
+          <div class="software-links">
+            <a href="https://shopdemo.kotech.com" class="software-link demo-link" target="_blank">
+              <i class="fas fa-play-circle" style="margin-right:5px"></i> <span>Démo live</span>
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.motema" class="software-link docs-link" target="_blank">
+              <i class="fab fa-google-play" style="margin-right:5px"></i> <span>Google Play</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      .java-badge {
+        background-color: #f89820;
+        color: white;
+      }
+      .mysql-badge {
+        background-color: #00758f;
+        color: white;
+      }
+      .firebase-badge {
+        background-color: #ffca28;
+        color: #121212;
+      }
+      .aws-badge {
+        background-color: #232f3e;
+        color: white;
+      }
+      .mobile-badge {
+        background: linear-gradient(135deg, #ff4d79 0%, #ff8a5c 100%);
+        color: white;
+        padding: 3px 8px;
+        border-radius: 4px;
+        font-size: 0.8em;
+        display: inline-block;
+        margin-bottom: 10px;
+      }
+      .playstore-link {
+        background-color: #0f9d58;
+      }
+      .appstore-link {
+        background-color: #000000;
+      }
+      .web-link {
+        background-color: #4285f4;
+      }
+    </style>
+
+
+    <div class="category-card">
+      <div class="software-image">
+        <img src="assets/img/slides/refine/slide1_.jpg" alt="CyberShield Security">
+      </div>
+      <div class="software-list">
+        <div class="software-item">
+          <h3>
+            <a href="https://cybershield.sec" target="_blank" style="margin-right:5px">Sécurité informatique</a>
+            <i class="fas fa-shield-alt"></i>
+          </h3>
+          <p class="security-badge">Solution Professionnelle de Cybersécurité</p>
+          <p>Protection avancée pour vos infrastructures réseaux et systèmes d'information.</p>
+          <ul class="software-features">
+            <li> Surveillance réseau 24/7</li>
+            <li> Détection d'intrusions (IDS/IPS)</li>
+            <li> Pentesting automatisé</li>
+            <li> Analyse des vulnérabilités</li>
+            <li> Conformité RGPD & ISO 27001</li>
+          </ul>
+          <div class="software-links">
+            <a href="https://docs.cybershield.sec" class="software-link docs-link" target="_blank">
+              <i class="fas fa-book-open" style="margin-right:5px"></i> <span>Documentation</span>
+            </a>
+            <a href="https://demo.cybershield.sec" class="software-link demo-link" target="_blank">
+              <i class="fas fa-certificate" style="margin-right:5px"></i> <span>Certifications</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      .security-badge {
+        background: linear-gradient(135deg, #0d324d 0%, #7f5a83 100%);
+        color: white;
+        padding: 3px 8px;
+        border-radius: 4px;
+        font-size: 0.8em;
+        display: inline-block;
+        margin-bottom: 10px;
+      }
+      .python-badge {
+        background-color: #3776ab;
+        color: white;
+      }
+      .go-badge {
+        background-color: #00add8;
+        color: white;
+      }
+      .elk-badge {
+        background-color: #005571;
+        color: white;
+      }
+      .docker-badge {
+        background-color: #2496ed;
+        color: white;
+      }
+      .cert-link {
+        background-color: #16a085;
+      }
+    </style>
+
+
+    <div class="category-card">
+      <div class="software-image">
+        <img src="assets/img/slides/refine/slide1_.jpg" alt="TechFormation">
+      </div>
+      <div class="software-list">
+        <div class="software-item">
+          <h3>
+            <a href="https://formation.techpro.demo" target="_blank" style="margin-right:5px">KOTech Academy</a>
+            <i class="fas fa-graduation-cap"></i>
+          </h3>
+          <p>Formations complètes en développement et sécurité informatique pour professionnels.</p>
+          <ul class="software-features">
+            <li><strong>Développement Web</strong> : HTML/CSS, JavaScript, PHP, frameworks modernes</li>
+            <li><strong>Mobile</strong> : Android (Java/Kotlin), iOS (Swift), Flutter</li>
+            <li><strong>Logiciel</strong> : Windev, Java, C#, Python, C++</li>
+            <li><strong>CyberSécurité</strong> : Pentesting, forensic, sécurité réseau</li>
+          </ul>
+
+          <div class="software-links">
+            <a href="https://wa.me/242068323905" class="software-link docs-link" target="_blank">
+              <i class="fas fa-book" style="margin-right:5px"></i> </span>Formation à la demande</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      .enterprise-link {
+        background-color: #343a40;
+      }
+    </style>
+
+  </div>
+
+  <div class="cta-section">
+    <h2>Prêt à transformer votre entreprise ?</h2>
+    <p>Nos experts sont à votre disposition pour discuter de vos besoins et vous proposer la solution la plus adaptée.</p>
+    <a href="https://wa.me/242068323905?text=Bonjour%20KOTech%2C%20je%20souhaite%20obtenir%20un%20devis%20pour%20vos%20services." target="_blank" class="cta-button">Demander un devis personnalisé</a>
+  </div>
+
+
+
+  <section class="portfolio-section" id="Realisations">
+    <div class="container">
+      <h2 class="section-title">Nos Réalisations</h2>
+      <p class="section-subtitle">Des applications éprouvées, déployées avec succès chez nos partenaires.
+        Fiables, performantes et prêtes à l’emploi, elles répondent aux besoins concrets des entreprises sur le terrain.</p>
+
+      <div class="projects-grid">
+        <!-- Projet 1 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="assets/img/realisations/domus-catering-resto.png" alt="KOCaisse-Resto">
+            <div class="project-badge">Application web</div>
+          </div>
+          <div class="project-content">
+            <h3>Domus-Catering Resto</h3>
+            <p>Application de gestion complète, incluant la prise de commande en salle et un module intégré de commande en ligne.
+              Déployée avec succès chez notre client Domus.</p>
+            <a href="https://domus-catering.42web.io/Restaurant/index.php" target="_blank" class="project-link">Voir le cas client</a>
+          </div>
+        </div>
+
+        <!-- Projet 2 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="assets/img/realisations/domus-catering-patisserie.png" alt="Motema">
+            <div class="project-badge">Application web</div>
+          </div>
+          <div class="project-content">
+            <h3>Domus-Catering Pâtisserie</h3>
+            <p>Solution de gestion dédiée, avec prise de commande, suivi des stocks et interface de vente simplifiée.
+              Déployée avec succès chez notre client Domus.</p>
+            <a href="https://domus-catering.42web.io/index.php" target="_blank" class="project-link">Voir le cas client</a>
+          </div>
+        </div>
+
+        <!-- Projet 3 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="assets/img/realisations/gestmut.png" alt="CyberShield">
+            <div class="project-badge">Web</div>
+          </div>
+          <div class="project-content">
+            <h3>GESTMUT</h3>
+            <p>Application de gestion complète des opérations mutualistes : adhésions, cotisations, remboursements et rapports automatisés.
+              Déployée avec succès au sein de la societé Crédit du Congo.</p>
+            <a href="#" class="project-link">Voir le cas client</a>
+          </div>
+        </div>
+
+        <!-- Projet 4 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="assets/img/realisations/gestion-booking.png" alt="CyberShield">
+            <div class="project-badge">Logiciel</div>
+          </div>
+          <div class="project-content">
+            <h3>Gestion Booking</h3>
+            <p>Application de gestion des réservations de conteneurs, avec suivi des demandes, planification et historique des mouvements.
+              Déployée avec succès auprès de la société Transko.</p>
+            <a href="#" class="project-link">Voir le cas client</a>
+          </div>
+        </div>
+
+        <!-- Projet 5 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="assets/img/realisations/ged.png" alt="CyberShield">
+            <div class="project-badge">Logiciel</div>
+          </div>
+          <div class="project-content">
+            <h3>GED</h3>
+            <p>Application de gestion électronique des archives, permettant le classement, la recherche et le suivi sécurisé des documents.
+              Déployée avec succès au sein de l’entreprise Marcopera.</p>
+            <a href="#" class="project-link">Voir le cas client</a>
+          </div>
+        </div>
+
+        <!-- Projet 6 -->
+        <div class="project-card">
+          <div class="project-image">
+            <img src="assets/img/slides/refine/solution.jpg" alt="CyberShield">
+            <div class="project-badge">Logiciel</div>
+          </div>
+          <div class="project-content">
+            <h3>Caisse-Marco</h3>
+            <p>Application de gestion de caisse intuitive pour le suivi des encaissements, éditions de tickets et rapports de vente.
+              Déployée avec succès au sein de l’entreprise Marcopera.</p>
+            <a href="#" class="project-link">Voir le cas client</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="portfolio-cta">
+        <a href="#" class="cta-button">Voir toutes nos réalisations</a>
+      </div>
+    </div>
+  </section>
+  <style>
+    .portfolio-section {
+      padding:20px 0 40px 0;
+      background-color: #f9fafc;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2.2rem;
+      color: #2d3748;
+      margin-bottom: 15px;
+    }
+
+    .section-subtitle {
+      text-align: center;
+      color: #718096;
+      margin: 0 auto 50px;
+      font-size: 1.1rem;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+      gap: 30px;
+    }
+
+    .project-card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    .project-image {
+      position: relative;
+      height: 200px;
+      overflow: hidden;
+    }
+
+    .project-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .project-card:hover .project-image img {
+      transform: scale(1.05);
+    }
+
+    .project-badge {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background: #4299e1;
+      border:1px solid #fff;
+      color: white;
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+
+    .project-content {
+      padding: 25px;
+    }
+
+    .project-content h3 {
+      font-size: 1.4rem;
+      color: #2d3748;
+      margin-bottom: 10px;
+    }
+
+    .project-content p {
+      color: #718096;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .project-tech {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+
+    .project-tech span {
+      background: #edf2f7;
+      color: #4a5568;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+    }
+
+    .project-link {
+      color: #4299e1;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .project-link:hover {
+      text-decoration: underline;
+      text-decoration:none;
+    }
+
+    .project-link::after {
+      content: '→';
+      margin-left: 5px;
+      transition: margin-left 0.2s ease;
+    }
+
+    .project-link:hover::after {
+      margin-left: 8px;
+    }
+
+    .portfolio-cta {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 768px) {
+      .projects-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .section-title {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+
+
+  <section class="news-section" id="Actualites">
+    <div class="container">
+      <h2 class="section-title">Actualités</h2>
+      <p class="section-subtitle">Restez informé de nos dernières nouveautés et événements</p>
+
+      <div class="news-grid">
+        <!-- Article 1 -->
+        <article class="news-card">
+          <div class="news-media">
+            <img src="https://images.unsplash.com/photo-1593642634524-b40b5baae6bb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Nouvelle version KOCaisse">
+            <div class="news-date">
+              <span class="date-day">15</span>
+              <span class="date-month">Juin</span>
+              <span class="date-year">2025</span>
+            </div>
+          </div>
+          <div class="news-content">
+            <h3>Sortie de KOCaisse-Resto v3.5</h3>
+            <p>Nouveaux modules de gestion des stocks et intégration avec les plateformes de livraison. Découvrez les améliorations...</p>
+            <a href="#" class="news-link">Lire l'article </a>
+          </div>
+        </article>
+
+        <!-- Article 2 -->
+        <article class="news-card">
+          <div class="news-media">
+            <div class="video-thumbnail">
+              <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Conférence cybersécurité">
+              <div class="play-icon">▶</div>
+            </div>
+            <div class="news-date">
+              <span class="date-day">28</span>
+              <span class="date-month">Juillet</span>
+              <span class="date-year">2025</span>
+            </div>
+          </div>
+          <div class="news-content">
+            <h3>Conférence sur la cybersécurité</h3>
+            <p>Retour en vidéo sur notre participation au salon TechForSecure avec des ateliers pratiques sur les bonnes...</p>
+            <a href="#" class="news-link">Voir la vidéo </a>
+          </div>
+        </article>
+
+        <!-- Article 3 -->
+        <article class="news-card">
+          <div class="news-media">
+            <img src="https://images.unsplash.com/photo-1607252650355-f7fd0460ccdb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Certification ISO">
+            <div class="news-date">
+              <span class="date-day">10</span>
+              <span class="date-month">Aout</span>
+              <span class="date-year">2025</span>
+            </div>
+          </div>
+          <div class="news-content">
+            <h3>Certification ISO 27001</h3>
+            <p>Nous sommes fiers d'annoncer l'obtention de la certification sécurité pour nos solutions. Découvrez ce que cela...</p>
+            <a href="#" class="news-link">En savoir plus </a>
+          </div>
+        </article>
+      </div>
+
+      <div class="news-cta">
+        <a href="#" class="cta-button">Voir toutes les actualités</a>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .news-section {
+      padding: 50px 0;
+      background-color: #fff;
+    }
+
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .news-card {
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+
+    .news-card:hover {
+      border-color: #4299e1;
+      box-shadow: 0 5px 15px rgba(66, 153, 225, 0.1);
+      transform: translateY(-3px);
+    }
+
+    .news-media {
+      position: relative;
+      height: 180px;
+      overflow: hidden;
+    }
+
+    .news-media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .news-card:hover .news-media img {
+      transform: scale(1.05);
+    }
+
+    .news-date {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      background: rgba(255,255,255,0.9);
+      padding: 10px 15px;
+      border-radius: 6px;
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .date-day {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #2d3748;
+      line-height: 1;
+    }
+
+    .date-month {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      color: #4a5568;
+      font-weight: 600;
+    }
+
+    .date-year {
+      font-size: 0.7rem;
+      color: #718096;
+    }
+
+    .news-content {
+      padding: 20px;
+    }
+
+    .news-content h3 {
+      font-size: 1.2rem;
+      color: #2d3748;
+      margin-bottom: 10px;
+    }
+
+    .news-content p {
+      color: #718096;
+      line-height: 1.6;
+      margin-bottom: 15px;
+      font-size: 0.95rem;
+    }
+
+    .news-link {
+      color: #4299e1;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 0.9rem;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .news-link:hover {
+      text-decoration:none;
+    }
+
+    .news-link::after {
+      content: '→';
+      margin-left: 5px;
+      transition: margin-left 0.2s ease;
+    }
+
+    .news-link:hover::after {
+      margin-left: 8px;
+    }
+
+    .news-cta {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    /* Style spécifique pour les vidéos */
+    .video-thumbnail {
+      position: relative;
+      height: 100%;
+    }
+
+    .play-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(255,255,255,0.8);
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      color: #4299e1;
+      transition: all 0.3s ease;
+    }
+
+    .news-card:hover .play-icon {
+      background: rgba(66, 153, 225, 0.9);
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      .news-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
+
+  <section class="contact-section" id="Contact">
+    <div class="container">
+      <h2 class="section-title">Contactez-nous</h2>
+      <p class="section-subtitle">Une question, un projet ? Notre équipe est à votre écoute</p>
+
+      <div class="contact-container">
+        <!-- Formulaire de contact -->
+        <div class="contact-form">
+          <form action="#" method="POST">
+            <div class="form-group">
+              <label for="name">Nom complet</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Sujet</label>
+              <select id="subject" name="subject">
+                <option value="info">Demande d'information</option>
+                <option value="quote">Demande de devis</option>
+                <option value="support">Support technique</option>
+                <option value="other">Autre</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+
+            <button type="submit" class="submit-button">Envoyer le message</button>
+          </form>
+        </div>
+
+        <!-- Informations de contact -->
+        <div class="contact-info">
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="info-content">
+              <h3>Adresse</h3>
+              <p>Tié-Tié<br>7/7 de dany</p>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <div class="info-content">
+              <h3>Téléphone</h3>
+              <p>+242 06 832 39 05</p>
+              <p>Lundi-Vendredi, 9h-18h</p>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="info-content">
+              <h3>Email</h3>
+              <p>kotech.secretariat@gmail.com</p>
+              <p>Support: kotech.support@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .contact-section {
+      padding: 50px 0;
+      background-color: #f9fafc;
+    }
+
+    .contact-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      max-width: 1000px;
+      margin: 40px auto 0;
+    }
+
+    .contact-form {
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+      color: #4a5568;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 10px 1px;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      font-size: 1rem;
+      transition: border 0.3s ease;
+    }
+
+    select{
+      height:45px
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: #4299e1;
+      outline: none;
+    }
+
+    .form-group textarea {
+      resize: vertical;
+    }
+
+    .submit-button {
+      background: #4299e1;
+      color: white;
+      border: none;
+      padding: 12px 30px;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      width: 100%;
+    }
+
+    .submit-button:hover {
+      background: #3182ce;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
+
+    .info-card {
+      display: flex;
+      gap: 15px;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+    }
+
+    .info-icon {
+      width: 50px;
+      height: 50px;
+      background: #ebf8ff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #4299e1;
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+
+    .info-content h3 {
+      font-size: 1.1rem;
+      color: #2d3748;
+      margin-bottom: 5px;
+    }
+
+    .info-content p {
+      color: #718096;
+      font-size: 0.95rem;
+      line-height: 1.5;
+      margin: 3px 0;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 15px;
+      margin-top: 10px;
+    }
+
+    .social-link {
+      width: 40px;
+      height: 40px;
+      background: #ebf8ff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #4299e1;
+      transition: all 0.3s ease;
+    }
+
+    .social-link:hover {
+      background: #4299e1;
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      .contact-container {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-form {
+        padding: 20px;
+      }
+    }
+  </style>
+
+</div>
+
+
+<!-- Footer ================================================== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <!-- Colonne 1 : Logo & Contact -->
+      <div class="footer-column">
+        <div class="footer-logo">
+          <a href="index.html" class="logo-text">KOTech</a>
+        </div>
+        <div class="footer-contact">
+          <address>
+            <strong>KOTech Solutions</strong><br>
+            Tié-Tié<br>
+            7/7 de dany<br>
+            <i class="fas fa-phone-alt"></i> (+242) 06 832 39 05<br>
+            <i class="fas fa-envelope"></i><a style="color:white" href="mailto:kotech.secretariat@gmail.com">kotech.secretariat@gmail.com</a>
+          </address>
+
+
+        </div>
+
+        <div class="social-links">
+          <a href="https://www.facebook.com/KOTech242" target="_blank" class="social-link"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <!-- Colonne 2 : Liens rapides -->
+      <div class="footer-column">
+        <h3 class="footer-title">Navigation</h3>
+        <ul class="footer-links">
+          <li><a href="#"><i class="fas fa-chevron-right"></i> Accueil</a></li>
+          <li><a href="#"><i class="fas fa-chevron-right"></i> Qui sommes nous</a></li>
+          <li><a href="#"><i class="fas fa-chevron-right"></i> Solutions</a></li>
+          <li><a href="#"><i class="fas fa-chevron-right"></i> Realisations</a></li>
+          <li><a href="#"><i class="fas fa-chevron-right"></i> Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Colonne 3 : Services -->
+      <div class="footer-column">
+        <h3 class="footer-title">Nos Services</h3>
+        <ul class="footer-links">
+          <li><a href="#"><i class="fas fa-chevron-right"></i> Développement Web</a></li>
+          <li><a href="#"><i class="fas fa-chevron-right"></i> Développement Logiciel</a></li>
+          <li><a href="#"><i class="fas fa-chevron-right"></i> Applications Mobile</a></li>
+          <li><a href="#"><i class="fas fa-chevron-right"></i> Cybersécurité</a></li>
+          <li><a href="#"><i class="fas fa-chevron-right"></i> Formation</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Sous-footer -->
+    <div class="subfooter">
+      <div class="copyright">
+        &copy; <span id="current-year"></span> KOTech. Tous droits réservés.
+      </div>
+      <div class="legal-links">
+        <a href="#">Mentions légales</a> |
+        <a href="#">Politique de confidentialité</a> |
+        <a href="#">Conditions d'utilisation</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    background: #2d3748;
+    color: #fff;
+    padding: 60px 0 0;
+    font-size: 0.95rem;
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 50px;
+  }
+
+  .footer-column {
+    margin-bottom: 30px;
+  }
+
+  .footer-logo .logo-text {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 20px;
+    display: inline-block;
+  }
+
+  .footer-contact address {
+    font-style: normal;
+    line-height: 1.6;
+  }
+
+  .footer-contact i {
+    margin-right: 8px;
+    color: #4299e1;
+    width: 18px;
+    text-align: center;
+  }
+
+  .footer-title {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #fff;
+    position: relative;
+    padding-bottom: 10px;
+  }
+
+  .footer-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 2px;
+    background: #4299e1;
+  }
+
+  .footer-links {
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer-links li {
+    margin-bottom: 10px;
+  }
+
+  .footer-links a {
+    color: #a0aec0;
+    text-decoration: none;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-links a:hover {
+    color: #4299e1;
+  }
+
+  .footer-links i {
+    margin-right: 8px;
+    font-size: 0.8rem;
+    color: #4299e1;
+  }
+
+  .footer-text {
+    color: #a0aec0;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  .newsletter-form {
+    margin-bottom: 25px;
+  }
+
+  .input-group {
+    display: flex;
+  }
+
+  .form-input {
+    flex: 1;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    font-size: 0.9rem;
+  }
+
+  .form-button {
+    background: #4299e1;
+    color: white;
+    border: none;
+    padding: 0 18px;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+  .form-button:hover {
+    background: #3182ce;
+  }
+
+  .social-links {
+    display: flex;
+    gap: 12px;
+  }
+
+  .social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 50%;
+    color: #fff;
+    transition: all 0.3s;
+  }
+
+  .social-link:hover {
+    background: #4299e1;
+    transform: translateY(-3px);
+    text-decoration:none;
+  }
+
+  .subfooter {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .copyright, .legal-links {
+    color: #a0aec0;
+    font-size: 0.85rem;
+  }
+
+  .legal-links a {
+    color: #a0aec0;
+    text-decoration: none;
+    margin: 0 5px;
+    transition: color 0.3s;
+  }
+
+  .legal-links a:hover {
+    color: #4299e1;
+  }
+
+  @media (min-width: 768px) {
+    .subfooter {
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: left;
+    }
+  }
+</style>
+
+  <script>
+    /* Script pour l'année courante */
+   document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
+
+
+
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/modernizr.js"></script>
+<script src="assets/js/jquery.easing.1.3.js"></script>
+<script src="assets/js/google-code-prettify/prettify.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+
+<script src="assets/js/jquery.prettyPhoto.js"></script>
+<script src="assets/js/portfolio/jquery.quicksand.js"></script>
+<script src="assets/js/portfolio/setting.js"></script>
+<script src="assets/js/hover/jquery-hover-effect.js"></script>
+<script src="assets/js/jquery.flexslider.js"></script>
+<script src="assets/js/classie.js"></script>
+<script src="assets/js/cbpAnimatedHeader.min.js"></script>
+<script src="assets/js/jquery.refineslide.js"></script>
+<script src="assets/js/jquery.ui.totop.js"></script>
+
+<!-- Template Custom Javascript File -->
+<script src="assets/js/custom.js"></script>
+
+<script>
+  //Curseur Lien actif via scroll
+  window.addEventListener("scroll", function () {
+    const navItems = document.querySelectorAll(".class_btn");
+
+    navItems.forEach(item => {
+      const link = item.querySelector("a");
+      const section = document.querySelector(link.getAttribute("href"));
+
+      if (section) {
+        const rect = section.getBoundingClientRect();
+        if (rect.top <= 100 && rect.bottom >= 100) {
+          // Supprime la classe 'active' de tous les éléments
+          navItems.forEach(i => i.classList.remove("active"));
+          // Ajoute 'active' au bon élément
+          item.classList.add("active");
+        }
+      }
+    });
+  });
+
+  //Curseur Lien actif sur click
+  document.querySelectorAll(".class_btn").forEach(tab => {
+    tab.addEventListener("click", function() {
+      document.querySelectorAll(".class_btn").forEach(t => t.classList.remove("active"));
+      // document.querySelectorAll(".class_btn").forEach(t => t.classList.remove("btnDefaultMenu"));
+      // document.querySelectorAll(".class_btn").forEach(t => t.classList.add("btnDefaultMenu"));
+      this.classList.add("active");
+    });
+  });
+
+  // Envoi de mail
+  document.addEventListener('DOMContentLoaded', function() {
+    const contactForm = document.querySelector('.contact-form form');
+
+    contactForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      // Afficher un loader
+      const submitBtn = contactForm.querySelector('.submit-button');
+      submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Envoi en cours...';
+      submitBtn.disabled = true;
+
+      // Récupérer les données du formulaire
+      const formData = {
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        subject: document.getElementById('subject').value,
+        message: document.getElementById('message').value
+      };
+
+      // Envoyer via EmailJS
+      emailjs.send('service_7035uxg', 'template_x02tt7z', formData)
+              .then(function(response) {
+                // Succès
+                showAlert('success', 'Message envoyé avec succès !');
+                contactForm.reset();
+              }, function(error) {
+                // Erreur
+                showAlert('error', "Échec de l'envoi. Veuillez réessayer ou nous contacter directement par email.");
+              })
+              .finally(function() {
+                // Réinitialiser le bouton
+                submitBtn.innerHTML = 'Envoyer le message';
+                submitBtn.disabled = false;
+              });
+    });
+
+    function showAlert(type, message) {
+      const alertDiv = document.createElement('div');
+      alertDiv.className = `alert alert-${type}`;
+      alertDiv.textContent = message;
+
+      // Style de base pour l'alerte
+      alertDiv.style.padding = '15px';
+      alertDiv.style.margin = '20px 0';
+      alertDiv.style.borderRadius = '4px';
+      alertDiv.style.color = 'white';
+      alertDiv.style.textAlign = 'center';
+
+      if (type === 'success') {
+        alertDiv.style.background = '#4CAF50'; // Vert
+      } else {
+        alertDiv.style.background = '#F44336'; // Rouge
+      }
+
+      // Insérer avant le formulaire
+      contactForm.parentNode.insertBefore(alertDiv, contactForm);
+
+      // Disparaître après 5s
+      setTimeout(() => {
+        alertDiv.style.opacity = '0';
+        setTimeout(() => alertDiv.remove(), 300);
+      }, 5000);
+    }
+  });
+</script>
+</body>
+
+</html>
